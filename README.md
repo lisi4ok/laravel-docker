@@ -5,9 +5,10 @@
 # Laravel Shugars
 
 ## Features:
-- `Dockerize` - {`sqlite`, `mysql`, `mariadb`, `postgres`, `sqlsrv`}
+- `Dockerize` - {`sqlite`, `mysql`, `mariadb`, `postgres`, `sqlsrv`, `mongodb`}
 - `PHPMyAdmin`
 - `PGAdmin`
+- `Mongo Express`
 - `Env`
 - `GitHub Actions`
 - `Gitlab CI`
@@ -20,6 +21,7 @@
 - `mariadb`
 - `postgres`
 - `sqlsrv`
+- `mongodb`
 
 
 - `sqlite` - Copy the `.env.example.sqlite` to `.env` file
@@ -39,6 +41,11 @@
 `OR`
 
 - `sqlsrv` - Copy the `.env.example.sqlsrv` to `.env` file
+
+`OR`
+
+- `mongodb` - Copy the `.env.example.mongodb` to `.env` file
+
 
 
 ## Install
@@ -70,7 +77,7 @@ php artisan db:seed
 ## Start
 + No SQLite Database:
 ```
-docker compose -f ./docker-compose-{mysql|mariadb|postgres|sqlsrv}.yml up -d
+docker compose -f ./docker-compose-{mysql|mariadb|postgres|sqlsrv|mongodb}.yml up -d
 ```
 
 ```
